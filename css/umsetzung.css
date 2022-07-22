@@ -1,0 +1,50 @@
+.button {
+    background-color: #1649ff;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 2rem 0rem;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+  }
+
+.button:hover {
+    background-color: #1135ba;
+  }
+
+.logotooltip {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .logoLink:hover .logotooltip {
+    visibility: visible;
+  }
+
+  .logosDiv {   
+    padding-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+
+  }
+
+  iframe {
+    margin: 2rem 0rem;
+  }

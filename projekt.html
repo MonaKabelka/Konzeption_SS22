@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>Best conditions to communicate</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/projekt.css">
+    <script type="module" src="./scripts/Spracherkennung.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function toggleInstructionDropdown() {
+            document.getElementById("instruction").classList.toggle("show");
+            document.getElementById("dropicon").classList.toggle("fa-angle-right");
+            document.getElementById("dropicon").classList.toggle("fa-angle-down");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    document.getElementById("dropicon").classList.toggle("fa-angle-right");
+                    document.getElementById("dropicon").classList.toggle("fa-angle-down");
+                }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div>
+                <a href="index.html"><img src="./assets/logo.png" alt="Logo" class="logo"></a>
+            </div>
+            <div>
+                <a href="index.html" class="navlink">Home</a>
+                <a href="thema.html" class="navlink">Thema</a>
+                <a href="idee.html" class="navlink">Idee</a>
+                <a href="umsetzung.html" class="navlink">Umsetzung</a>
+                <a href="projekt.html" class="navlink activeLink">Projekt</a>
+            </div>
+        </d>
+    </nav>
+    <article>
+        <h1>Projekt</h1>
+        <video id="videoTag" controls loop autoplay width="80%">
+            <source src="./Videos/Szene01.mp4" type="video/mp4">
+            <source src="./Videos/Szene02.mp4" type="video/mp4">
+            <source src="./Videos/Szene03.mp4" type="video/mp4">
+            <source src="./Videos/Szene04.mp4" type="video/mp4">
+        </video>
+        <h1>Projektbeschreibung</h1>
+        <p class="textfeld">Unser Projekt ist ein interaktiver Film, welcher eine scheiternde Onlinekommunikation simuliert. Die digitale Kommunikation versagt durch technische Fehler, welche zu Schwierigkeiten führen, eine inhaltlich wertvolle und (innerhalb der Möglichkeiten des Online Raumes) natürliche Kommunikation zu halten. Wir haben uns bei der Veröffentlichung für die Webseite entschieden, weil Zuschauer*innen, wie bei einem realen Onlinemeeting auf ihrem Endgerät mit dem Video interagieren können. Die Meeting-Situation soll möglichst realitätsnah simuliert werden, um Rezipient*innen eine bestmögliche Immersion zu ermöglichen. Hierbei hilft die programmierte Spracherkennung. Werden die passenden möglichen Antwortmöglichkeiten erkannt, lädt das nächste Video.</p>
+        <p class="textfeld" style=" font-style: italic;">Wir sind heutzutage noch immer nicht so weit, dass Kommunikation online bessere Voraussetzungen bieten kann als die Kommunikation, die wir in Person führen.
+            Entwickeln sich jedoch die technischen Voraussetzungen ins Positive, könnte die Onlinekommunikation in der Zukunft der face to face Kommunikation weit überlegen sein.</p>
+            <div class="dropdown">
+                <h1 onclick="toggleInstructionDropdown()" class="dropbtn"><i class="fa fa-angle-right" id="dropicon"></i>&nbsp;Instruktionen</h1>
+                
+                <div id="instruction" class="dropdown-content">
+                    <p class="textfeld">
+                    Antwortmöglichkeiten: <br>
+                    1. Video: “Hallo”, “Hey”, “Guten Tag”, “Ja”<br>
+                    2. Video: "Ja", "Jetzt schon", "Jetzt"<br>
+                    3. Video: "Lag", "Nein", "Lagst", "Verpixelt", "Pixel", "Leider nicht", "Nö", "Ne", "Abgehackt"<br>
+                    4. Video: "Oh", "Schade", "Internet"</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div><img src="./assets/hfu.png" alt="HFU Logo" class="logoF"></div>
+                <div><p>Mona&nbsp;Kabelka<br>Julian&nbsp;Himmel</p></div>
+            </div>
+        </article>
+    <footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+.dropdown-content {
+display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropbtn {
+    margin-bottom: 0rem;
+    cursor: pointer;
+    transition: color 0.33s ease-in-out;
+}
+
+.dropbtn:hover {
+    color: #1649ff;
+}
+
+i {
+    font-family: 'Font Awesome';
+}
